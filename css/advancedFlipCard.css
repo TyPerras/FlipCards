@@ -24,6 +24,19 @@
 	float: left;
 	margin: 30px 5px 30px 5px; /* Need lots of top and bottom margin here for when the cards flip so that they don't overlap content when they stretch outside of the container due to the perspective/animation properties */
 	padding: 0 !important;
+
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
 }
 
 .flip-card-game .flip-card,
